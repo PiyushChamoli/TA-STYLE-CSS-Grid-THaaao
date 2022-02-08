@@ -1,0 +1,55 @@
+
+h1 {
+    padding: 2rem;
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.header-ul {
+    // @extend boxstyle !optional;
+    background-color: white;
+    border-top: 5px solid #0095BE;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    justify-items: center;
+    a {
+        display: inline-block;
+       color: #0095BE;
+       font-size: 1.6rem;
+       padding: 6px 0; 
+    }
+}
+
+.main-section {
+    margin-top: 1.3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1.2rem;
+}
+
+.item {
+    background-color: white;
+    border-top: 5px solid #0095BE;
+    border-radius: 5px;
+    padding: 8px;
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #3A4A4F;
+    }
+    p {
+        color: #3A4A4F;
+        font-size: 1.1rem;
+        padding: 7px 0;
+    }
+}
+
+.item2 {
+    grid-row: span 3;
+}
+.item4 {
+    grid-row: span 2;
+}
