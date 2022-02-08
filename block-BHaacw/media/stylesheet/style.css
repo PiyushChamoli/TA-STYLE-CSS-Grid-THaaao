@@ -69,6 +69,14 @@ body {
 
 a {
   text-decoration: none;
+  display: inline-block;
+  color: red;
+}
+
+.header-ul, .item {
+  background-color: white;
+  border-top: 5px solid #0095BE;
+  border-radius: 5px;
 }
 
 h1 {
@@ -79,9 +87,6 @@ h1 {
 }
 
 .header-ul {
-  background-color: white;
-  border-top: 5px solid #0095BE;
-  border-radius: 5px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[6];
@@ -97,20 +102,15 @@ h1 {
 }
 
 .main-section {
-  margin-top: 1.3rem;
+  margin: 1.5rem 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (minmax(300px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
   gap: 1.2rem;
 }
 
 .item {
-  background-color: white;
-  border-top: 5px solid #0095BE;
-  border-radius: 5px;
   padding: 8px;
 }
 
@@ -128,9 +128,25 @@ h1 {
 
 .item2 {
   grid-row: span 3;
+  display: -ms-grid;
+  display: grid;
+}
+
+.item2 img {
+  width: 15rem;
+  height: 15rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .item4 {
   grid-row: span 2;
+}
+
+.item4 img {
+  max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

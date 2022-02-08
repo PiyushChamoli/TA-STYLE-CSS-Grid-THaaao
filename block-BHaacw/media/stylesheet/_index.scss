@@ -7,10 +7,7 @@ h1 {
 }
 
 .header-ul {
-    // @extend boxstyle !optional;
-    background-color: white;
-    border-top: 5px solid #0095BE;
-    border-radius: 5px;
+    @extend %boxstyle !optional;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-items: center;
@@ -23,17 +20,15 @@ h1 {
 }
 
 .main-section {
-    margin-top: 1.3rem;
+    margin: 1.5rem 0;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-    grid-template-rows: 1fr 1fr 1fr;
+    // grid-template-rows: 1fr 1fr 1fr;
     gap: 1.2rem;
 }
 
 .item {
-    background-color: white;
-    border-top: 5px solid #0095BE;
-    border-radius: 5px;
+    @extend %boxstyle !optional;
     padding: 8px;
     h2 {
         font-size: 1.5rem;
@@ -49,7 +44,20 @@ h1 {
 
 .item2 {
     grid-row: span 3;
+    display: grid;
+    // grid-template-columns: repeat(auto-fit, min(1fr));
+    // justify-self: center;
+    img {
+        width: 15rem;
+        height: 15rem;
+        object-fit: cover;
+        border-radius: 50%;
+        justify-self: center;
+    }
 }
 .item4 {
     grid-row: span 2;
+    img {
+        max-width: 100%;
+    }
 }
