@@ -1,0 +1,45 @@
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+}
+
+.grid-2-1 {
+        grid-template-columns: 1fr 1fr;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padding {
+    padding: 2rem;
+}
